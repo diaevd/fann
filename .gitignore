@@ -30,7 +30,9 @@ install_manifest.txt
 /bin/scaling_traind.exe
 /bin/steepness_traind.exe
 /bin/xor_cpp_sampled.exe
-*.sln
+#*.sln
 *.suo
 *.filters
-*.vcxproj
+*#.vcxproj
+*.ipdb
+*.iobj

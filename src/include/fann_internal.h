@@ -78,10 +78,10 @@ void fann_init_error_data(struct fann_error *errdat);
 struct fann *fann_create_from_fd(FILE * conf, const char *configuration_file);
 struct fann_train_data *fann_read_train_from_fd(FILE * file, const char *filename);
 
-void fann_compute_MSE(struct fann *ann, fann_type * desired_output);
+FANN_EXTERNAL void fann_compute_MSE(struct fann *ann, fann_type * desired_output);
 void fann_update_output_weights(struct fann *ann);
-void fann_backpropagate_MSE(struct fann *ann);
-void fann_update_weights(struct fann *ann);
+FANN_EXTERNAL void fann_backpropagate_MSE(struct fann *ann);
+FANN_EXTERNAL void fann_update_weights(struct fann *ann);
 void fann_update_slopes_batch(struct fann *ann, struct fann_layer *layer_begin,
 							  struct fann_layer *layer_end);
 void fann_update_weights_quickprop(struct fann *ann, unsigned int num_data,
